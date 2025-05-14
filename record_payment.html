@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Payment</title>
+</head>
+<body>
+    <h1>Record Payment</h1>
+    <form action="/recordPayment" method="post">
+    </form>
+        <label for="tenantId">Tenant ID:</label><br>
+        <input type="number" id="tenantId" name="tenantId" required><br><br>
+
+        <label for="paymentMonth">Payment Month (e.g., January 2025):</label><br>
+        <input type="text" id="paymentMonth" name="paymentMonth" required><br><br>
+
+        <label for="paymentDate">Payment Date:</label><br>
+        <input type="date" id="paymentDate" name="paymentDate"><br><br>
+
+        <label for="amountPaid">Amount Paid:</label><br>
+        <input type="number" id="amountPaid" name="amountPaid" step="0.01" required><br><br>
+
+        <input type="submit" value="Record Payment">
+    </form>
+    <p><a href="index.html">Back to Dashboard</a></p>
+</body>
+</html>

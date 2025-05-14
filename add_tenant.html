@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Tenant</title>
+</head>
+<body>
+    <h1>Add New Tenant</h1>
+    <form action="/addTenant" method="post">
+    </form>
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="roomNumber">Room Number:</label><br>
+        <input type="text" id="roomNumber" name="roomNumber"><br><br>
+
+        <label for="dateMovedIn">Date Moved In:</label><br>
+        <input type="date" id="dateMovedIn" name="dateMovedIn"><br><br>
+
+        <label for="contactNumber">Contact Number:</label><br>
+        <input type="text" id="contactNumber" name="contactNumber"><br><br>
+
+        <label for="rentAmount">Rent Amount:</label><br>
+        <input type="number" id="rentAmount" name="rentAmount" step="0.01" required><br><br>
+
+        <input type="submit" value="Add Tenant">
+    </form>
+    <p><a href="index.html">Back to Dashboard</a></p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Tenant Information</title>
+</head>
+<body>
+    <h1>Update Tenant Information</h1>
+    <form action="/updateTenant" method="post">
+    </form>
+        <label for="tenantId">Tenant ID to Update:</label><br>
+        <input type="number" id="tenantId" name="tenantId" required><br><br>
+
+        <label for="newFullName">New Full Name:</label><br>
+        <input type="text" id="newFullName" name="newFullName"><br><br>
+
+        <label for="newRoomNumber">New Room Number:</label><br>
+        <input type="text" id="newRoomNumber" name="newRoomNumber"><br><br>
+
+        <label for="newDateMovedIn">New Date Moved In:</label><br>
+        <input type="date" id="newDateMovedIn" name="newDateMovedIn"><br><br>
+
+        <label for="newContactNumber">New Contact Number:</label><br>
+        <input type="text" id="newContactNumber" name="newContactNumber"><br><br>
+
+        <label for="newRentAmount">New Rent Amount:</label><br>
+        <input type="number" id="newRentAmount" name="newRentAmount" step="0.01"><br><br>
+
+        <input type="submit" value="Update Tenant">
+    </form>
+    <p><a href="index.html">Back to Dashboard</a></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Payment Record</title>
+</head>
+<body>
+    <h1>Update Payment Record</h1>
+   <form action="/updatePayment" method="post">
+    </form>
+        <label for="paymentId">Payment ID to Update:</label><br>
+        <input type="number" id="paymentId" name="paymentId" required><br><br>
+
+        <label for="newPaymentMonth">New Payment Month (e.g., March 2025):</label><br>
+        <input type="text" id="newPaymentMonth" name="newPaymentMonth"><br><br>
+
+        <label for="newPaymentDate">New Payment Date:</label><br>
+        <input type="date" id="newPaymentDate" name="newPaymentDate"><br><br>
+
+        <label for="newAmountPaid">New Amount Paid:</label><br>
+        <input type="number" id="newAmountPaid" name="newAmountPaid" step="0.01"><br><br>
+
+        <input type="submit" value="Update Payment">
+    </form>
+    <p><a href="index.html">Back to Dashboard</a></p>
+</body>
+</html>
